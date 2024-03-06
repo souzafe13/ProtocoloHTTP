@@ -2,14 +2,14 @@ var express = require('express');
 
 const app = express();
 
-// rota 1
+// rota chamando o html
 app.get("/", function(req, res){
-    res.send("boas vindas ao meu app!");
+    res.sendFile(__dirname + "/html/index.html");
 });
 
-// rota 2
+// rota chamando o html
 app.get("/sobre", function(req, res){
-    res.send("sobre a minha empresa!");
+    res.sendFile(__dirname + "/html/sobre.html");
 });
 
 // rota 3
