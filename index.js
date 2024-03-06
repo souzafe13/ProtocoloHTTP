@@ -2,12 +2,12 @@ var express = require('express');
 
 const app = express();
 
-// rota chamando o html
+// rota 1 chamando o html
 app.get("/", function(req, res){
     res.sendFile(__dirname + "/html/index.html");
 });
 
-// rota chamando o html
+// rota 2 chamando o html
 app.get("/sobre", function(req, res){
     res.sendFile(__dirname + "/html/sobre.html");
 });
